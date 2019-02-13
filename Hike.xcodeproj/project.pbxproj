@@ -13,10 +13,13 @@
 		0D27BD89220EB0D300166C5B /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27BD88220EB0D300166C5B /* ThemeViewController.swift */; };
 		0D27BD8B220EBAF400166C5B /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27BD8A220EBAF400166C5B /* UIView+Helpers.swift */; };
 		0D27BD8D220EC2CE00166C5B /* HikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27BD8C220EC2CE00166C5B /* HikeViewController.swift */; };
+		0D44A6F222124EC000C901D0 /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44A6F122124EC000C901D0 /* ThemeCollectionViewCell.swift */; };
+		0D44A6F42212582600C901D0 /* ThemeFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44A6F32212582600C901D0 /* ThemeFlowLayout.swift */; };
 		0D81C81A220E83320091E418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D81C819220E83320091E418 /* AppDelegate.swift */; };
 		0D81C81F220E83320091E418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C81D220E83320091E418 /* Main.storyboard */; };
 		0D81C821220E83340091E418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C820220E83340091E418 /* Assets.xcassets */; };
 		0D81C824220E83340091E418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C822220E83340091E418 /* LaunchScreen.storyboard */; };
+		0DE36CF12213B79D00F2E298 /* HikeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE36CF02213B79D00F2E298 /* HikeViewController+CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +29,15 @@
 		0D27BD88220EB0D300166C5B /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		0D27BD8A220EBAF400166C5B /* UIView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
 		0D27BD8C220EC2CE00166C5B /* HikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeViewController.swift; sourceTree = "<group>"; };
+		0D44A6F122124EC000C901D0 /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
+		0D44A6F32212582600C901D0 /* ThemeFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFlowLayout.swift; sourceTree = "<group>"; };
 		0D81C816220E83320091E418 /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D81C819220E83320091E418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D81C81E220E83320091E418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D81C820220E83340091E418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D81C823220E83340091E418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D81C825220E83340091E418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DE36CF02213B79D00F2E298 /* HikeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HikeViewController+CollectionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				0D130F302210A3BE00C70E6F /* Extensions */,
+				0D44A6F122124EC000C901D0 /* ThemeCollectionViewCell.swift */,
+				0D44A6F32212582600C901D0 /* ThemeFlowLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -76,6 +84,7 @@
 			children = (
 				0D130F312210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift */,
 				0D130F332210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift */,
+				0DE36CF02213B79D00F2E298 /* HikeViewController+CollectionView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,8 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE36CF12213B79D00F2E298 /* HikeViewController+CollectionView.swift in Sources */,
 				0D130F342210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift in Sources */,
 				0D130F322210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift in Sources */,
+				0D44A6F222124EC000C901D0 /* ThemeCollectionViewCell.swift in Sources */,
+				0D44A6F42212582600C901D0 /* ThemeFlowLayout.swift in Sources */,
 				0D81C81A220E83320091E418 /* AppDelegate.swift in Sources */,
 				0D27BD89220EB0D300166C5B /* ThemeViewController.swift in Sources */,
 				0D27BD8D220EC2CE00166C5B /* HikeViewController.swift in Sources */,

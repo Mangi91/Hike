@@ -9,12 +9,18 @@
 import UIKit
 
 class HikeViewController: UIViewController {
-    override var prefersStatusBarHidden: Bool { return true }
+    @IBOutlet weak var collectionView: UICollectionView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    public var themeImageNames:[String] = ["","","3dglasses","bat","bowtie","lips","feather","heartglasses","crown","mask","pica","sombrero","",""]
+    
+    override var prefersStatusBarHidden: Bool { return true }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        collectionView.scrollToItem(at: IndexPath(row:4, section: 0), at: .centeredHorizontally, animated: false)
+    }
+                
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToThemePageVC" {
             let vc = segue.destination as! ThemePageViewController

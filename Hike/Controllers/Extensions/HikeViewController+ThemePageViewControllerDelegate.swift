@@ -9,15 +9,7 @@
 import UIKit
 
 extension HikeViewController: ThemePageViewControllerDelegate {
-    func viewControllerBefore(previousVCIndex: Int?) {
-        if let _ = previousVCIndex {
-            
-        }
-    }
-    
-    func viewControllerAfterCalled(nextVCIndex: Int?) {
-        if let _ = nextVCIndex {
-            
-        }
+    func transitioningToViewController(atIndex: Int) {
+        self.collectionView.scrollToItem(at: IndexPath(row: atIndex, section: 0), at: .centeredHorizontally, animated: true)
     }
 }

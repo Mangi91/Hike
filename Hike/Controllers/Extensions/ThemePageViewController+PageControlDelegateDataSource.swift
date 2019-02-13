@@ -9,6 +9,10 @@
 import UIKit
 
 extension ThemePageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return themeViewControllers.count
+    }
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let vcIndex = themeViewControllers.index(of: viewController) else {
             return nil
@@ -16,14 +20,12 @@ extension ThemePageViewController: UIPageViewControllerDataSource, UIPageViewCon
         
         let previousIndex = vcIndex - 1
         
-        guard previousIndex >= 0 else {
-            self.themePageVCDelegate?.viewControllerBefore(previousVCIndex: nil)
+        if previousIndex < 0 {
             return nil
         }
         
         let previousVC = themeViewControllers[previousIndex]
         
-        self.themePageVCDelegate?.viewControllerBefore(previousVCIndex: previousIndex)
         return previousVC
     }
     
@@ -34,14 +36,34 @@ extension ThemePageViewController: UIPageViewControllerDataSource, UIPageViewCon
         
         let nextIndex = vcIndex + 1
         
-        guard nextIndex <= themeViewControllers.count - 1 else {
-            self.themePageVCDelegate?.viewControllerAfterCalled(nextVCIndex: nil)
+        if nextIndex >= themeViewControllers.count - 1 {
             return nil
         }
         
         let nextVC = themeViewControllers[nextIndex]
         
-        self.themePageVCDelegate?.viewControllerAfterCalled(nextVCIndex: nextIndex)
         return nextVC
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+        let previousVC = pendingViewControllers.first as! ThemeViewController
+        if let id = previousVC.restorationIdentifier {
+            let index = Int(id)! + 3
+            
+            if nextIndex < index {
+                nextIndex += 1
+            } else {
+                nextIndex -= 1
+            }
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            currentIndex = nextIndex
+            themePageVCDelegate?.transitioningToViewController(atIndex: currentIndex)
+        } else {
+            nextIndex = currentIndex
+        }
     }
 }
