@@ -11,7 +11,7 @@ import UIKit
 class HikeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
-    public var themeImageNames:[String] = ["","","3dglasses","bat","bowtie","lips","feather","heartglasses","crown","mask","pica","sombrero","",""]
+    public var themeImageNames:[String] = ["","","3dglasses","bat","bowtie","lips","feather","heartglasses","crown","mask","pica","sombrero","",""] //empty elements so that you can scroll to the end of the carousel theme options
     
     override var prefersStatusBarHidden: Bool { return true }
     

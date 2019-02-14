@@ -48,7 +48,7 @@ extension ThemePageViewController: UIPageViewControllerDataSource, UIPageViewCon
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
         let previousVC = pendingViewControllers.first as! ThemeViewController
         if let id = previousVC.restorationIdentifier {
-            let index = Int(id)! + 3
+            let index = Int(id)! + 2 //increment by two because of the empty carousel theme options
             
             if nextIndex < index {
                 nextIndex += 1

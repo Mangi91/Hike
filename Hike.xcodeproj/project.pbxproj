@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0FA6522214F45E0088F1E5 /* Hike+ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0FA6512214F45E0088F1E5 /* Hike+ThemeColors.swift */; };
 		0D130F322210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D130F312210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift */; };
 		0D130F342210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D130F332210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift */; };
 		0D27BD86220E9C8600166C5B /* ThemePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27BD85220E9C8600166C5B /* ThemePageViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0FA6512214F45E0088F1E5 /* Hike+ThemeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hike+ThemeColors.swift"; sourceTree = "<group>"; };
 		0D130F312210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemePageViewController+PageControlDelegateDataSource.swift"; sourceTree = "<group>"; };
 		0D130F332210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HikeViewController+ThemePageViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		0D27BD85220E9C8600166C5B /* ThemePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePageViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				0D130F302210A3BE00C70E6F /* Extensions */,
 				0D44A6F122124EC000C901D0 /* ThemeCollectionViewCell.swift */,
 				0D44A6F32212582600C901D0 /* ThemeFlowLayout.swift */,
+				0D0FA6512214F45E0088F1E5 /* Hike+ThemeColors.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				0D27BD89220EB0D300166C5B /* ThemeViewController.swift in Sources */,
 				0D27BD8D220EC2CE00166C5B /* HikeViewController.swift in Sources */,
 				0D27BD8B220EBAF400166C5B /* UIView+Helpers.swift in Sources */,
+				0D0FA6522214F45E0088F1E5 /* Hike+ThemeColors.swift in Sources */,
 				0D27BD86220E9C8600166C5B /* ThemePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
