@@ -27,6 +27,14 @@ extension HikeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 60, height: 60)
+        let device = UIDevice.current.device
+
+        if device == .iPhone6P6SP7P8P || device == .iPhoneXR || device == .iPhoneXSMax {
+            return CGSize(width: 70, height: 70)
+        } else if device == .iPhone5SSE {
+            return CGSize(width: 50, height: 50)
+        } else {
+            return CGSize(width: 60, height: 60)
+        }
     }
 }

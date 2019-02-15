@@ -28,8 +28,8 @@ class ThemePageViewController: UIPageViewController {
         UIColor.HikeGoldTheme,
         UIColor.HikeCrimsonTheme,
         UIColor.HikeGoldenFizzTheme,
-        UIColor.HikeMantisTheme,
-        UIColor.HikeMantisTheme
+        UIColor.HikeLimeTheme,
+        UIColor.HikeLimeTheme
     ]
     
     override var prefersStatusBarHidden: Bool { return true }

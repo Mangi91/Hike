@@ -15,8 +15,8 @@ class HikeViewController: UIViewController {
     
     override var prefersStatusBarHidden: Bool { return true }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         collectionView.scrollToItem(at: IndexPath(row:4, section: 0), at: .centeredHorizontally, animated: false)
     }

@@ -93,19 +93,19 @@ extension UIColor {
     static var HikeGoldenFizzTheme:[CGColor] {
         get {
             return [
-                UIColor(red: 217/255, green: 242/255, blue: 29/255, alpha: 1.0).cgColor,
-                UIColor(red: 220/255, green: 239/255, blue: 79/255, alpha: 1.0).cgColor,
-                UIColor(red: 223/255, green: 237/255, blue: 116/255, alpha: 1.0).cgColor
+                UIColor(red: 222/255, green: 237/255, blue: 11/255, alpha: 1.0).cgColor,
+                UIColor(red: 227/255, green: 232/255, blue: 106/255, alpha: 1.0).cgColor,
+                UIColor(red: 226/255, green: 229/255, blue: 153/255, alpha: 1.0).cgColor
             ]
         }
     }
     
-    static var HikeMantisTheme:[CGColor] {
+    static var HikeLimeTheme:[CGColor] {
         get {
             return [
-                UIColor(red: 47/255, green: 198/255, blue: 23/255, alpha: 1.0).cgColor,
-                UIColor(red: 74/255, green: 196/255, blue: 53/255, alpha: 1.0).cgColor,
-                UIColor(red: 106/255, green: 193/255, blue: 91/255, alpha: 1.0).cgColor
+                UIColor(red: 20/255, green: 204/255, blue: 0/255, alpha: 1.0).cgColor,
+                UIColor(red: 95/255, green: 204/255, blue: 83/255, alpha: 1.0).cgColor,
+                UIColor(red: 147/255, green: 204/255, blue: 140/255, alpha: 1.0).cgColor
             ]
         }
     }

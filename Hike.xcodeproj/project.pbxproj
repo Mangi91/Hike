@@ -20,6 +20,7 @@
 		0D81C81F220E83320091E418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C81D220E83320091E418 /* Main.storyboard */; };
 		0D81C821220E83340091E418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C820220E83340091E418 /* Assets.xcassets */; };
 		0D81C824220E83340091E418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C822220E83340091E418 /* LaunchScreen.storyboard */; };
+		0DA8C9A022163E50009C3AC3 /* UIDevice+DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */; };
 		0DE36CF12213B79D00F2E298 /* HikeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE36CF02213B79D00F2E298 /* HikeViewController+CollectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		0D81C820220E83340091E418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D81C823220E83340091E418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D81C825220E83340091E418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+DeviceType.swift"; sourceTree = "<group>"; };
 		0DE36CF02213B79D00F2E298 /* HikeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HikeViewController+CollectionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 		0D130F302210A3BE00C70E6F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */,
 				0D27BD8A220EBAF400166C5B /* UIView+Helpers.swift */,
 			);
 			path = Extensions;
@@ -205,6 +208,7 @@
 				0DE36CF12213B79D00F2E298 /* HikeViewController+CollectionView.swift in Sources */,
 				0D130F342210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift in Sources */,
 				0D130F322210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift in Sources */,
+				0DA8C9A022163E50009C3AC3 /* UIDevice+DeviceType.swift in Sources */,
 				0D44A6F222124EC000C901D0 /* ThemeCollectionViewCell.swift in Sources */,
 				0D44A6F42212582600C901D0 /* ThemeFlowLayout.swift in Sources */,
 				0D81C81A220E83320091E418 /* AppDelegate.swift in Sources */,
