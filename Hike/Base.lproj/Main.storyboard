@@ -86,22 +86,58 @@
                                     <outlet property="delegate" destination="k1c-fZ-F5J" id="jC3-zJ-vdy"/>
                                 </connections>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ur7-pd-Xe2" customClass="ChatTableView" customModule="Hike" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="46" id="QDy-Fa-5lS">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QDy-Fa-5lS" id="4fL-jF-M1h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="chatTableTopCorners" destination="hfA-ID-UBJ" id="GkE-FV-Vo3"/>
+                                    <outlet property="dataSource" destination="k1c-fZ-F5J" id="u8P-q9-36h"/>
+                                    <outlet property="delegate" destination="k1c-fZ-F5J" id="2g0-WG-uYQ"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfA-ID-UBJ">
+                                <rect key="frame" x="0.0" y="90" width="375" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Xga-mQ-X0t"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hfA-ID-UBJ" firstAttribute="leading" secondItem="ur7-pd-Xe2" secondAttribute="leading" id="1ty-Nm-U0r"/>
                             <constraint firstItem="3K2-DP-U5n" firstAttribute="leading" secondItem="jG5-QT-wZf" secondAttribute="leading" id="7Yw-qf-8cR"/>
                             <constraint firstItem="tuH-Gb-dTr" firstAttribute="leading" secondItem="04f-ZW-Dnb" secondAttribute="leading" constant="16" id="8G8-Yg-zYi"/>
                             <constraint firstItem="tuH-Gb-dTr" firstAttribute="centerX" secondItem="jG5-QT-wZf" secondAttribute="centerX" id="CmP-1S-K0y"/>
+                            <constraint firstItem="hfA-ID-UBJ" firstAttribute="trailing" secondItem="ur7-pd-Xe2" secondAttribute="trailing" id="JCY-Wf-o3A"/>
+                            <constraint firstItem="ur7-pd-Xe2" firstAttribute="bottom" secondItem="jG5-QT-wZf" secondAttribute="bottom" id="NeZ-ie-g8h"/>
                             <constraint firstItem="tuH-Gb-dTr" firstAttribute="centerY" secondItem="jG5-QT-wZf" secondAttribute="centerY" id="SxW-IO-1g1"/>
+                            <constraint firstItem="hfA-ID-UBJ" firstAttribute="top" secondItem="04f-ZW-Dnb" secondAttribute="top" constant="70" identifier="ChatTop" id="U8q-CA-vhh"/>
                             <constraint firstItem="3K2-DP-U5n" firstAttribute="bottom" secondItem="jG5-QT-wZf" secondAttribute="bottom" id="gBV-xX-ypD"/>
                             <constraint firstItem="04f-ZW-Dnb" firstAttribute="trailing" secondItem="tuH-Gb-dTr" secondAttribute="trailing" constant="16" id="hGF-fH-p2a"/>
+                            <constraint firstItem="ur7-pd-Xe2" firstAttribute="leading" secondItem="jG5-QT-wZf" secondAttribute="leading" identifier="ChatLeading" id="jA3-6V-UHb"/>
                             <constraint firstItem="3K2-DP-U5n" firstAttribute="trailing" secondItem="jG5-QT-wZf" secondAttribute="trailing" id="sM9-n6-xuU"/>
+                            <constraint firstItem="ur7-pd-Xe2" firstAttribute="top" secondItem="hfA-ID-UBJ" secondAttribute="bottom" id="uaW-gY-L4c"/>
                             <constraint firstItem="3K2-DP-U5n" firstAttribute="top" secondItem="jG5-QT-wZf" secondAttribute="top" id="wfz-VJ-LA8"/>
+                            <constraint firstItem="ur7-pd-Xe2" firstAttribute="trailing" secondItem="jG5-QT-wZf" secondAttribute="trailing" identifier="ChatTrailing" id="y6r-CK-8rg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="04f-ZW-Dnb"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="tuH-Gb-dTr" id="0c1-Oo-TFV"/>
+                        <outlet property="carouselThemeCollectionView" destination="tuH-Gb-dTr" id="IST-EH-oDD"/>
+                        <outlet property="chat" destination="ur7-pd-Xe2" id="GiX-96-NZc"/>
+                        <outlet property="themeContainer" destination="3K2-DP-U5n" id="ntW-0t-awq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="say-Bd-v7K" userLabel="First Responder" sceneMemberID="firstResponder"/>

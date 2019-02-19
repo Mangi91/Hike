@@ -21,6 +21,8 @@
 		0D81C821220E83340091E418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C820220E83340091E418 /* Assets.xcassets */; };
 		0D81C824220E83340091E418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C822220E83340091E418 /* LaunchScreen.storyboard */; };
 		0DA8C9A022163E50009C3AC3 /* UIDevice+DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */; };
+		0DE0F9202218E8AF00D1E8DA /* HikeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0F91F2218E8AF00D1E8DA /* HikeViewController+TableView.swift */; };
+		0DE0F9222218E9E900D1E8DA /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0F9212218E9E900D1E8DA /* ChatTableView.swift */; };
 		0DE36CF12213B79D00F2E298 /* HikeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE36CF02213B79D00F2E298 /* HikeViewController+CollectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		0D81C823220E83340091E418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D81C825220E83340091E418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+DeviceType.swift"; sourceTree = "<group>"; };
+		0DE0F91F2218E8AF00D1E8DA /* HikeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HikeViewController+TableView.swift"; sourceTree = "<group>"; };
+		0DE0F9212218E9E900D1E8DA /* ChatTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
 		0DE36CF02213B79D00F2E298 /* HikeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HikeViewController+CollectionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,7 @@
 				0D44A6F122124EC000C901D0 /* ThemeCollectionViewCell.swift */,
 				0D44A6F32212582600C901D0 /* ThemeFlowLayout.swift */,
 				0D0FA6512214F45E0088F1E5 /* Hike+ThemeColors.swift */,
+				0DE0F9212218E9E900D1E8DA /* ChatTableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 				0D130F312210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift */,
 				0D130F332210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift */,
 				0DE36CF02213B79D00F2E298 /* HikeViewController+CollectionView.swift */,
+				0DE0F91F2218E8AF00D1E8DA /* HikeViewController+TableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,12 +217,14 @@
 				0DA8C9A022163E50009C3AC3 /* UIDevice+DeviceType.swift in Sources */,
 				0D44A6F222124EC000C901D0 /* ThemeCollectionViewCell.swift in Sources */,
 				0D44A6F42212582600C901D0 /* ThemeFlowLayout.swift in Sources */,
+				0DE0F9202218E8AF00D1E8DA /* HikeViewController+TableView.swift in Sources */,
 				0D81C81A220E83320091E418 /* AppDelegate.swift in Sources */,
 				0D27BD89220EB0D300166C5B /* ThemeViewController.swift in Sources */,
 				0D27BD8D220EC2CE00166C5B /* HikeViewController.swift in Sources */,
 				0D27BD8B220EBAF400166C5B /* UIView+Helpers.swift in Sources */,
 				0D0FA6522214F45E0088F1E5 /* Hike+ThemeColors.swift in Sources */,
 				0D27BD86220E9C8600166C5B /* ThemePageViewController.swift in Sources */,
+				0DE0F9222218E9E900D1E8DA /* ChatTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79WAJT7FB8;
 				INFOPLIST_FILE = Hike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79WAJT7FB8;
 				INFOPLIST_FILE = Hike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

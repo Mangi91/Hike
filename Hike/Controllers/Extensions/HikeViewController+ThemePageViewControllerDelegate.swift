@@ -10,6 +10,6 @@ import UIKit
 
 extension HikeViewController: ThemePageViewControllerDelegate {
     func transitioningToViewController(atIndex: Int) {
-        self.collectionView.scrollToItem(at: IndexPath(row: atIndex, section: 0), at: .centeredHorizontally, animated: true)
+        carouselThemeCollectionView.scrollToItem(at: IndexPath(row: atIndex, section: 0), at: .centeredHorizontally, animated: true)
     }
 }
