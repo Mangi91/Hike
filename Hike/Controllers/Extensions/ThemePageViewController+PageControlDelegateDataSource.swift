@@ -14,7 +14,7 @@ extension ThemePageViewController: UIPageViewControllerDataSource, UIPageViewCon
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let vcIndex = themeViewControllers.index(of: viewController) else {
+        guard let vcIndex = themeViewControllers.firstIndex(of: viewController) else {
             return nil
         }
         
@@ -30,7 +30,7 @@ extension ThemePageViewController: UIPageViewControllerDataSource, UIPageViewCon
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let vcIndex = themeViewControllers.index(of: viewController) else {
+        guard let vcIndex = themeViewControllers.firstIndex(of: viewController) else {
             return nil
         }
         

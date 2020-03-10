@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0D3BB4222391770034A21B /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D3BB3222391770034A21B /* ChatTableViewCell.swift */; };
 		0D0FA6522214F45E0088F1E5 /* Hike+ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0FA6512214F45E0088F1E5 /* Hike+ThemeColors.swift */; };
 		0D130F322210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D130F312210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift */; };
 		0D130F342210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D130F332210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift */; };
@@ -20,6 +21,7 @@
 		0D81C81F220E83320091E418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C81D220E83320091E418 /* Main.storyboard */; };
 		0D81C821220E83340091E418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C820220E83340091E418 /* Assets.xcassets */; };
 		0D81C824220E83340091E418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C822220E83340091E418 /* LaunchScreen.storyboard */; };
+		0D9DE0BE2415FF5000CE2D44 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DE0BD2415FF5000CE2D44 /* Chat.swift */; };
 		0DA8C9A022163E50009C3AC3 /* UIDevice+DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */; };
 		0DE0F9202218E8AF00D1E8DA /* HikeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0F91F2218E8AF00D1E8DA /* HikeViewController+TableView.swift */; };
 		0DE0F9222218E9E900D1E8DA /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0F9212218E9E900D1E8DA /* ChatTableView.swift */; };
@@ -27,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0D3BB3222391770034A21B /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		0D0FA6512214F45E0088F1E5 /* Hike+ThemeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hike+ThemeColors.swift"; sourceTree = "<group>"; };
 		0D130F312210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemePageViewController+PageControlDelegateDataSource.swift"; sourceTree = "<group>"; };
 		0D130F332210A46400C70E6F /* HikeViewController+ThemePageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HikeViewController+ThemePageViewControllerDelegate.swift"; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		0D81C820220E83340091E418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D81C823220E83340091E418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D81C825220E83340091E418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D9DE0BD2415FF5000CE2D44 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+DeviceType.swift"; sourceTree = "<group>"; };
 		0DE0F91F2218E8AF00D1E8DA /* HikeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HikeViewController+TableView.swift"; sourceTree = "<group>"; };
 		0DE0F9212218E9E900D1E8DA /* ChatTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 		0D130F2C2210A33200C70E6F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D9DE0BD2415FF5000CE2D44 /* Chat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -74,6 +79,7 @@
 				0D44A6F32212582600C901D0 /* ThemeFlowLayout.swift */,
 				0D0FA6512214F45E0088F1E5 /* Hike+ThemeColors.swift */,
 				0DE0F9212218E9E900D1E8DA /* ChatTableView.swift */,
+				0D0D3BB3222391770034A21B /* ChatTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +178,7 @@
 				TargetAttributes = {
 					0D81C815220E83320091E418 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -216,6 +223,7 @@
 				0D130F322210A42A00C70E6F /* ThemePageViewController+PageControlDelegateDataSource.swift in Sources */,
 				0DA8C9A022163E50009C3AC3 /* UIDevice+DeviceType.swift in Sources */,
 				0D44A6F222124EC000C901D0 /* ThemeCollectionViewCell.swift in Sources */,
+				0D9DE0BE2415FF5000CE2D44 /* Chat.swift in Sources */,
 				0D44A6F42212582600C901D0 /* ThemeFlowLayout.swift in Sources */,
 				0DE0F9202218E8AF00D1E8DA /* HikeViewController+TableView.swift in Sources */,
 				0D81C81A220E83320091E418 /* AppDelegate.swift in Sources */,
@@ -223,6 +231,7 @@
 				0D27BD8D220EC2CE00166C5B /* HikeViewController.swift in Sources */,
 				0D27BD8B220EBAF400166C5B /* UIView+Helpers.swift in Sources */,
 				0D0FA6522214F45E0088F1E5 /* Hike+ThemeColors.swift in Sources */,
+				0D0D3BB4222391770034A21B /* ChatTableViewCell.swift in Sources */,
 				0D27BD86220E9C8600166C5B /* ThemePageViewController.swift in Sources */,
 				0DE0F9222218E9E900D1E8DA /* ChatTableView.swift in Sources */,
 			);
@@ -380,7 +389,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manuelcubillo.Hike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -399,7 +408,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manuelcubillo.Hike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

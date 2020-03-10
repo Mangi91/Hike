@@ -67,9 +67,10 @@ class ChatTableView: UITableView {
         }
         
         chatTableTop.constant = hide ? topConstraintConstant : defaultTopConstraintConstant
+        
         UIView.animate(withDuration: 0.23 , animations: {
             self.superview!.layoutIfNeeded()
-        })
+        }, completion: nil)
     }
     
     private func setupConstraints() {
