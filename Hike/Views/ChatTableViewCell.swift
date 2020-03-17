@@ -26,11 +26,11 @@ class ChatTableViewCell: UITableViewCell {
         chatFriendImageView.clipsToBounds = true
     }
     
-    public func setup(chat: Chat) {
+    public func setup(withChat chat: Chat) {
         chatFriendImageView.image = UIImage(named: chat.userAvatar)
         chatFriendNameLabel.text = chat.userName
         chatLatestMessageLabel.text = chat.message
         chatTimeLabel.text = chat.time
-        chatStatusImageView.image = UIImage(named: chat.timeIcon)
+        chatStatusImageView.image = chat.timeIcon != nil ? UIImage(named: chat.timeIcon!) : nil
     }
 }

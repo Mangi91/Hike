@@ -10,11 +10,13 @@ import UIKit
 
 extension HikeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return chats.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:"ChatCell", for: indexPath) as! ChatTableViewCell
+        cell.setup(withChat: chats[indexPath.row])
+        
         return cell
     }
     

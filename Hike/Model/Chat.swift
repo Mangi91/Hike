@@ -6,12 +6,12 @@
 //  Copyright © 2020 Manuel Cubillo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Chat {
     public var userAvatar: String
     public var userName: String
     public var message: String
     public var time: String
-    public var timeIcon: String
+    public var timeIcon: String?
 }
