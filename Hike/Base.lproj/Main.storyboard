@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k1c-fZ-F5J">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -21,17 +21,17 @@
             <objects>
                 <viewController id="k1c-fZ-F5J" customClass="HikeViewController" customModule="Hike" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jG5-QT-wZf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3K2-DP-U5n">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
                                     <segue destination="wtv-ka-8V2" kind="embed" identifier="goToThemePageVC" id="FT7-4w-Bcr"/>
                                 </connections>
                             </containerView>
-                            <collectionView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tuH-Gb-dTr">
-                                <rect key="frame" x="16" y="408" width="382" height="80"/>
+                            <collectionView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tuH-Gb-dTr" customClass="ThemeCollectionView" customModule="Hike" customModuleProvider="target">
+                                <rect key="frame" x="16" y="293.5" width="343" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="szk-52-oFN"/>
@@ -85,21 +85,21 @@
                                 </connections>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ur7-pd-Xe2" customClass="ChatTableView" customModule="Hike" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="134" width="414" height="762"/>
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="65" id="QDy-Fa-5lS" customClass="ChatTableViewCell" customModule="Hike" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="65"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QDy-Fa-5lS" id="4fL-jF-M1h">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="HV3-EA-epQ">
-                                                    <rect key="frame" x="20" y="10.5" width="374" height="45"/>
+                                                    <rect key="frame" x="20" y="10.5" width="335" height="45"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cUI-bS-Cfj">
-                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="45"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="280" height="45"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="olia" translatesAutoresizingMaskIntoConstraints="NO" id="vNb-lf-j65">
                                                                     <rect key="frame" x="0.0" y="0.0" width="44" height="45"/>
@@ -108,7 +108,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="lkg-ZC-plc">
-                                                                    <rect key="frame" x="52" y="0.0" width="267" height="45"/>
+                                                                    <rect key="frame" x="52" y="0.0" width="228" height="45"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ankush" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aY-7u-zKQ">
                                                                             <rect key="frame" x="0.0" y="0.0" width="62.5" height="20.5"/>
@@ -132,7 +132,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PUu-Ab-czh">
-                                                            <rect key="frame" x="319" y="0.0" width="55" height="45"/>
+                                                            <rect key="frame" x="280" y="0.0" width="55" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye3-rb-I2d">
                                                                     <rect key="frame" x="11.5" y="0.0" width="32" height="20"/>
@@ -180,7 +180,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfA-ID-UBJ">
-                                <rect key="frame" x="0.0" y="114" width="414" height="20"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="20"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Xga-mQ-X0t"/>
@@ -195,7 +195,7 @@
                             <constraint firstItem="tuH-Gb-dTr" firstAttribute="centerX" secondItem="jG5-QT-wZf" secondAttribute="centerX" id="CmP-1S-K0y"/>
                             <constraint firstItem="hfA-ID-UBJ" firstAttribute="trailing" secondItem="ur7-pd-Xe2" secondAttribute="trailing" id="JCY-Wf-o3A"/>
                             <constraint firstItem="ur7-pd-Xe2" firstAttribute="bottom" secondItem="jG5-QT-wZf" secondAttribute="bottom" id="NeZ-ie-g8h"/>
-                            <constraint firstItem="tuH-Gb-dTr" firstAttribute="centerY" secondItem="jG5-QT-wZf" secondAttribute="centerY" id="SxW-IO-1g1"/>
+                            <constraint firstItem="tuH-Gb-dTr" firstAttribute="centerY" secondItem="jG5-QT-wZf" secondAttribute="centerY" identifier="themeCollectionViewCenterY" id="SxW-IO-1g1"/>
                             <constraint firstItem="hfA-ID-UBJ" firstAttribute="top" secondItem="04f-ZW-Dnb" secondAttribute="top" constant="70" identifier="ChatTop" id="U8q-CA-vhh"/>
                             <constraint firstItem="3K2-DP-U5n" firstAttribute="bottom" secondItem="jG5-QT-wZf" secondAttribute="bottom" id="gBV-xX-ypD"/>
                             <constraint firstItem="04f-ZW-Dnb" firstAttribute="trailing" secondItem="tuH-Gb-dTr" secondAttribute="trailing" constant="16" id="hGF-fH-p2a"/>
@@ -208,7 +208,7 @@
                         <viewLayoutGuide key="safeArea" id="04f-ZW-Dnb"/>
                     </view>
                     <connections>
-                        <outlet property="carouselThemeCollectionView" destination="tuH-Gb-dTr" id="IST-EH-oDD"/>
+                        <outlet property="carouselThemeCollectionView" destination="tuH-Gb-dTr" id="XfB-UQ-8TD"/>
                         <outlet property="chat" destination="ur7-pd-Xe2" id="GiX-96-NZc"/>
                         <outlet property="themeContainer" destination="3K2-DP-U5n" id="ntW-0t-awq"/>
                     </connections>
@@ -222,7 +222,7 @@
             <objects>
                 <viewController storyboardIdentifier="ThemeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oPz-hu-7Wa" customClass="ThemeViewController" customModule="Hike" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dMa-LY-XUC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Zac-w6-skM"/>

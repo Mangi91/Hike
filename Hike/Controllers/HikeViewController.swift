@@ -9,10 +9,10 @@
 import UIKit
 
 class HikeViewController: UIViewController {
-    @IBOutlet weak var carouselThemeCollectionView: UICollectionView!
+    @IBOutlet weak var carouselThemeCollectionView: ThemeCollectionView!
     @IBOutlet weak var themeContainer: UIView!
     @IBOutlet weak var chat: ChatTableView!
-    
+ 
     public var chats: [Chat] = [
         Chat(userAvatar:"johng", userName: "John Gutierrez", message: "You down for some video games tonight?", time: "Now", timeIcon: "clock"),
         Chat(userAvatar:"olia", userName: "Olia Sullivan", message: "Are you done with the notes?", time: "Now", timeIcon: "clock"),
