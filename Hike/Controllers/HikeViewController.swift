@@ -12,7 +12,13 @@ class HikeViewController: UIViewController {
     @IBOutlet weak var carouselThemeCollectionView: ThemeCollectionView!
     @IBOutlet weak var themeContainer: UIView!
     @IBOutlet weak var chat: ChatTableView!
- 
+    @IBOutlet weak var userAvatar: UIImageView!
+    @IBOutlet weak var searchContainer: UIStackView!
+    @IBOutlet weak var settingsIcon: UIImageView!
+    @IBOutlet weak var themeLabel: UILabel!
+    @IBOutlet weak var appIcon: UIImageView!
+    @IBOutlet weak var searchContainerTop: NSLayoutConstraint!
+    
     public var chats: [Chat] = [
         Chat(userAvatar:"johng", userName: "John Gutierrez", message: "You down for some video games tonight?", time: "Now", timeIcon: "clock"),
         Chat(userAvatar:"olia", userName: "Olia Sullivan", message: "Are you done with the notes?", time: "Now", timeIcon: "clock"),
@@ -38,9 +44,15 @@ class HikeViewController: UIViewController {
         super.viewDidAppear(animated)
         
         carouselThemeCollectionView.scrollToItem(at: IndexPath(row:4, section: 0), at: .centeredHorizontally, animated: false)
+        userAvatar.layer.cornerRadius = userAvatar.frame.width / 2
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(HikeViewController.themeBackgroundTapped))
         themeContainer.addGestureRecognizer(tapGesture)
+        
+        let device = UIDevice.current.device
+        if device != .iPhoneXXS && device != .iPhoneXR && device != .iPhoneXSMax {
+            searchContainerTop.constant = 23
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -53,8 +65,34 @@ class HikeViewController: UIViewController {
     @objc func themeBackgroundTapped() {
         if chat.isMinimized {
             chat.maximize()
+            showUserIcons()
         } else {
             chat.minimize()
+            showThemeIcons()
         }
+    }
+    
+    private func showThemeIcons() {
+        UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: {
+            self.searchContainer.alpha = 0
+            self.appIcon.alpha = 0
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.2, options: [], animations: {
+            self.themeLabel.alpha = 1
+            self.settingsIcon.alpha = 1
+        }, completion: nil)
+    }
+    
+    private func showUserIcons() {
+        UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: {
+            self.themeLabel.alpha = 0
+            self.settingsIcon.alpha = 0
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.2, options: [], animations: {
+            self.searchContainer.alpha = 1
+            self.appIcon.alpha = 1
+        }, completion: nil)
     }
 }
