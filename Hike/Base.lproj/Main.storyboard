@@ -211,7 +211,7 @@
                                     <constraint firstAttribute="width" constant="25" id="OXu-03-z9o"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-f8-zW6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-f8-zW6">
                                 <rect key="frame" x="373" y="63" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="Doa-29-DE6"/>
@@ -287,10 +287,10 @@
     </scenes>
     <resources>
         <image name="clock" width="512" height="512"/>
-        <image name="gear" width="46" height="46"/>
         <image name="mike" width="128" height="128"/>
         <image name="olia" width="512" height="512"/>
         <image name="omega" width="26" height="19"/>
         <image name="search" width="46" height="47"/>
+        <image name="settings" width="46" height="46"/>
     </resources>
 </document>

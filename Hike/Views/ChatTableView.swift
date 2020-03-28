@@ -70,7 +70,10 @@ class ChatTableView: UITableView {
         
         UIView.animate(withDuration: 0.23 , animations: {
             self.superview!.layoutIfNeeded()
-        }, completion: nil)
+        }, completion: { _ in
+            let notif: Notification.Name = hide ? .ChatTableDidMinimize : .ChatTableDidMaximize
+            NotificationCenter.default.post(name: notif, object: nil)
+        })
     }
     
     private func setupConstraints() {

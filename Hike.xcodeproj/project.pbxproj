@@ -17,6 +17,7 @@
 		0D27BD8D220EC2CE00166C5B /* HikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27BD8C220EC2CE00166C5B /* HikeViewController.swift */; };
 		0D44A6F222124EC000C901D0 /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44A6F122124EC000C901D0 /* ThemeCollectionViewCell.swift */; };
 		0D44A6F42212582600C901D0 /* ThemeFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44A6F32212582600C901D0 /* ThemeFlowLayout.swift */; };
+		0D558A7F242EFBBA00E80C6A /* NotificationName+ChatTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D558A7E242EFBBA00E80C6A /* NotificationName+ChatTable.swift */; };
 		0D81C81A220E83320091E418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D81C819220E83320091E418 /* AppDelegate.swift */; };
 		0D81C81F220E83320091E418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C81D220E83320091E418 /* Main.storyboard */; };
 		0D81C821220E83340091E418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C820220E83340091E418 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		0D27BD8C220EC2CE00166C5B /* HikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeViewController.swift; sourceTree = "<group>"; };
 		0D44A6F122124EC000C901D0 /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D44A6F32212582600C901D0 /* ThemeFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFlowLayout.swift; sourceTree = "<group>"; };
+		0D558A7E242EFBBA00E80C6A /* NotificationName+ChatTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+ChatTable.swift"; sourceTree = "<group>"; };
 		0D81C816220E83320091E418 /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D81C819220E83320091E418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D81C81E220E83320091E418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		0D130F2C2210A33200C70E6F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D558A7D242EFB5700E80C6A /* Extensions */,
 				0D9DE0BD2415FF5000CE2D44 /* Chat.swift */,
 			);
 			path = Model;
@@ -114,6 +117,14 @@
 			children = (
 				0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */,
 				0D27BD8A220EBAF400166C5B /* UIView+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0D558A7D242EFB5700E80C6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D558A7E242EFBBA00E80C6A /* NotificationName+ChatTable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,6 +240,7 @@
 				0D44A6F222124EC000C901D0 /* ThemeCollectionViewCell.swift in Sources */,
 				0D9DE0BE2415FF5000CE2D44 /* Chat.swift in Sources */,
 				0D44A6F42212582600C901D0 /* ThemeFlowLayout.swift in Sources */,
+				0D558A7F242EFBBA00E80C6A /* NotificationName+ChatTable.swift in Sources */,
 				0DE0F9202218E8AF00D1E8DA /* HikeViewController+TableView.swift in Sources */,
 				0D81C81A220E83320091E418 /* AppDelegate.swift in Sources */,
 				0D27BD89220EB0D300166C5B /* ThemeViewController.swift in Sources */,

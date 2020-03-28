@@ -37,21 +37,31 @@ class ThemePageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.dataSource = self
         self.delegate = self
         
         setupThemes()
-        
         self.setViewControllers([themeViewControllers[2]], direction: .forward, animated: true, completion: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onChatTableDidMinimize), name: .ChatTableDidMinimize, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onChatTableDidMaximize), name: .ChatTableDidMaximize, object: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self)
+    }
+        
     private func setupThemes() {
         for i in 0..<11 {
             let theme = createThemeViewController(withColors: themeColors[i])
             theme.restorationIdentifier = "\(i)"
             themeViewControllers.append(theme)
         }
-        
     }
     
     private func createThemeViewController(withColors colors: [CGColor]) -> UIViewController {
@@ -61,5 +71,13 @@ class ThemePageViewController: UIPageViewController {
         tempThemeVC.themeColors = colors
         
         return tempThemeVC
+    }
+    
+    @objc private func onChatTableDidMinimize() {
+        self.dataSource = self //enable swipe gesture
+    }
+    
+    @objc private func onChatTableDidMaximize() {
+        self.dataSource = nil //disable swipe gesture
     }
 }
