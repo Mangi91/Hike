@@ -15,8 +15,8 @@ protocol ThemePageViewControllerDelegate {
 class ThemePageViewController: UIPageViewController {
     public var themeViewControllers:[UIViewController] = []
     public var themePageVCDelegate: ThemePageViewControllerDelegate?
-    public var currentIndex = 4 //carousel current starter index
-    public var nextIndex = 4
+    public var currentIndex = 0 //The selected carousel theme index
+    public var nextIndex = 0
     
     private var themeColors:[[CGColor]] = [
         UIColor.HikeLightSlateBlueTheme,
@@ -36,27 +36,23 @@ class ThemePageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.delegate = self
-        
-        setupThemes()
-        self.setViewControllers([themeViewControllers[2]], direction: .forward, animated: true, completion: nil)
+        createThemeVCs()
+        setupTheme()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         NotificationCenter.default.addObserver(self, selector: #selector(onChatTableDidMinimize), name: .ChatTableDidMinimize, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(onChatTableDidMaximize), name: .ChatTableDidMaximize, object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
         NotificationCenter.default.removeObserver(self)
     }
         
-    private func setupThemes() {
+    private func createThemeVCs() {
         for i in 0..<11 {
             let theme = createThemeViewController(withColors: themeColors[i])
             theme.restorationIdentifier = "\(i)"
@@ -66,11 +62,24 @@ class ThemePageViewController: UIPageViewController {
     
     private func createThemeViewController(withColors colors: [CGColor]) -> UIViewController {
         let storyboard = UIStoryboard.init(name:"Main", bundle: nil)
-        
         let tempThemeVC = storyboard.instantiateViewController(withIdentifier:"ThemeVC") as! ThemeViewController
         tempThemeVC.themeColors = colors
         
         return tempThemeVC
+    }
+    
+    private func setupTheme() {        
+        guard let index = UserDefaults.standard.value(forKey:"appThemeIndex") else {
+            self.currentIndex = 4
+            self.nextIndex = 4
+            self.setViewControllers([themeViewControllers[2]], direction: .forward, animated: true, completion: nil)
+            return
+        }
+        
+        self.currentIndex = index as! Int
+        self.nextIndex = currentIndex
+        let themeVCIndex = (index as! Int) - 2
+        self.setViewControllers([themeViewControllers[themeVCIndex]], direction: .forward, animated: true, completion: nil)
     }
     
     @objc private func onChatTableDidMinimize() {

@@ -39,20 +39,16 @@ class HikeViewController: UIViewController {
     //empty elements so you can scroll to end of carousel options
     public var themeImageNames:[String] = ["","","3dglasses","bat","bowtie","lips","feather","heartglasses","crown","mask","pica","sombrero","",""]
     override var prefersStatusBarHidden: Bool { return true }
-    
+            
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        carouselThemeCollectionView.scrollToItem(at: IndexPath(row:4, section: 0), at: .centeredHorizontally, animated: false)
         userAvatar.layer.cornerRadius = userAvatar.frame.width / 2
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(HikeViewController.themeBackgroundTapped))
         themeContainer.addGestureRecognizer(tapGesture)
         
-        let device = UIDevice.current.device
-        if device != .iPhoneXXS && device != .iPhoneXR && device != .iPhoneXSMax {
-            searchContainerTop.constant = 23
-        }
+        setupVCConstraints()
+        setupCarouselAppTheme()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -94,5 +90,22 @@ class HikeViewController: UIViewController {
             self.searchContainer.alpha = 1
             self.appIcon.alpha = 1
         }, completion: nil)
+    }
+    
+    private func setupCarouselAppTheme() {
+        guard let index = UserDefaults.standard.value(forKeyPath:"appThemeIndex") else {
+            UserDefaults.standard.set(4, forKey:"appThemeIndex")
+            carouselThemeCollectionView.scrollToItem(at: IndexPath(row:4, section: 0), at: .centeredHorizontally, animated: false)
+            return
+        }
+        
+        carouselThemeCollectionView.scrollToItem(at: IndexPath(row: index as! Int, section: 0), at: .centeredHorizontally, animated: false)
+    }
+    
+    private func setupVCConstraints() {
+        let device = UIDevice.current.device
+        if device != .iPhoneXXS && device != .iPhoneXR && device != .iPhoneXSMax {
+            searchContainerTop.constant = 23
+        }
     }
 }
