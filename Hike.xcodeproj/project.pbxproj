@@ -24,6 +24,7 @@
 		0D81C824220E83340091E418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D81C822220E83340091E418 /* LaunchScreen.storyboard */; };
 		0D9DE0BE2415FF5000CE2D44 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DE0BD2415FF5000CE2D44 /* Chat.swift */; };
 		0DA8C9A022163E50009C3AC3 /* UIDevice+DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */; };
+		0DB0449E246CE45A004762CE /* CALayer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0449D246CE45A004762CE /* CALayer+Helpers.swift */; };
 		0DD9F47C242AF6F3006A2350 /* ThemeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9F47B242AF6F3006A2350 /* ThemeCollectionView.swift */; };
 		0DE0F9202218E8AF00D1E8DA /* HikeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0F91F2218E8AF00D1E8DA /* HikeViewController+TableView.swift */; };
 		0DE0F9222218E9E900D1E8DA /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0F9212218E9E900D1E8DA /* ChatTableView.swift */; };
@@ -50,6 +51,7 @@
 		0D81C825220E83340091E418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D9DE0BD2415FF5000CE2D44 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+DeviceType.swift"; sourceTree = "<group>"; };
+		0DB0449D246CE45A004762CE /* CALayer+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Helpers.swift"; sourceTree = "<group>"; };
 		0DD9F47B242AF6F3006A2350 /* ThemeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionView.swift; sourceTree = "<group>"; };
 		0DE0F91F2218E8AF00D1E8DA /* HikeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HikeViewController+TableView.swift"; sourceTree = "<group>"; };
 		0DE0F9212218E9E900D1E8DA /* ChatTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				0DA8C99F22163E50009C3AC3 /* UIDevice+DeviceType.swift */,
 				0D27BD8A220EBAF400166C5B /* UIView+Helpers.swift */,
+				0DB0449D246CE45A004762CE /* CALayer+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				0D0FA6522214F45E0088F1E5 /* Hike+ThemeColors.swift in Sources */,
 				0D0D3BB4222391770034A21B /* ChatTableViewCell.swift in Sources */,
 				0D27BD86220E9C8600166C5B /* ThemePageViewController.swift in Sources */,
+				0DB0449E246CE45A004762CE /* CALayer+Helpers.swift in Sources */,
 				0DE0F9222218E9E900D1E8DA /* ChatTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,7 +21,11 @@ extension ThemePageViewController: UIPageViewControllerDataSource, UIPageViewCon
         let previousIndex = vcIndex - 1
         
         if previousIndex < 0 {
+            self.view.layer.removeLayer(atIndex: 0)
+            self.view.addGradientLayer(colors: themeColors[previousIndex + 1], locations: [0.0, 0.50, 1.0])
             return nil
+        } else {
+            
         }
         
         let previousVC = themeViewControllers[previousIndex]
@@ -37,7 +41,11 @@ extension ThemePageViewController: UIPageViewControllerDataSource, UIPageViewCon
         let nextIndex = vcIndex + 1
         
         if nextIndex >= themeViewControllers.count - 1 {
+            self.view.layer.removeLayer(atIndex: 0)
+            self.view.addGradientLayer(colors: themeColors[nextIndex - 1], locations: [0.0, 0.50, 1.0])
             return nil
+        } else {
+            
         }
         
         let nextVC = themeViewControllers[nextIndex]

@@ -18,7 +18,7 @@ class ThemePageViewController: UIPageViewController {
     public var currentIndex = 0 //The selected carousel theme index
     public var nextIndex = 0
     
-    private var themeColors:[[CGColor]] = [
+    public var themeColors:[[CGColor]] = [
         UIColor.HikeLightSlateBlueTheme,
         UIColor.HikeDodgerBlueTheme,
         UIColor.HikeBrilliantRoseTheme,
@@ -39,6 +39,15 @@ class ThemePageViewController: UIPageViewController {
         self.delegate = self
         createThemeVCs()
         setupTheme()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        //add any gradient layer for now
+        if !view.layer.containsGradienLayer {
+            view.addGradientLayer(colors: themeColors[2], locations: [0.0, 0.50, 1.0])
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

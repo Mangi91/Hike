@@ -20,8 +20,8 @@ class HikeViewController: UIViewController {
     @IBOutlet weak var searchContainerTop: NSLayoutConstraint!
     
     public var chats: [Chat] = [
-        Chat(userAvatar:"johng", userName: "John Gutierrez", message: "You down for some video games tonight?", time: "Now", timeIcon: "clock"),
         Chat(userAvatar:"olia", userName: "Olia Sullivan", message: "Are you done with the notes?", time: "Now", timeIcon: "clock"),
+        Chat(userAvatar:"johng", userName: "John Gutierrez", message: "You down for some video games tonight?", time: "Now", timeIcon: "clock"),
         Chat(userAvatar:"elisa", userName: "Elisa Johnson", message: "I had such a great time tonight! 😘", time: "Now", timeIcon: "checkmark"),
         Chat(userAvatar:"charles", userName: "Charles Thompson", message: "Lets meet at the movie theater!", time: "Now", timeIcon: "checkmark"),
         Chat(userAvatar:"john", userName: "John", message: "Checkout my new app design!", time: "Now", timeIcon: "checkmark"),
@@ -66,6 +66,8 @@ class HikeViewController: UIViewController {
             chat.minimize()
             showThemeIcons()
         }
+        
+        //chat.reloadRows(at: chat.visibleCellIndexPaths, with: .none)
     }
     
     private func showThemeIcons() {
@@ -109,3 +111,18 @@ class HikeViewController: UIViewController {
         }
     }
 }
+
+//extension UITableView {
+//    var visibleCellIndexPaths: [IndexPath] {
+//        get {
+//            var indexPaths = [IndexPath]()
+//            for cell in visibleCells {
+//                if let indexPath = self.indexPath(for: cell) {
+//                    indexPaths.append(indexPath)
+//                }
+//            }
+//
+//            return indexPaths
+//        }
+//    }
+//}

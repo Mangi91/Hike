@@ -16,9 +16,4 @@ extension UIView {
         gradientLayer.locations = locations
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
-    
-    func roundedCorners(radius: CGFloat) {
-        self.layer.cornerRadius = radius
-        self.clipsToBounds = true
-    }
 }

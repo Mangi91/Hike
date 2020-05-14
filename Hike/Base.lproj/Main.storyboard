@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k1c-fZ-F5J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k1c-fZ-F5J">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -96,34 +96,35 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="HV3-EA-epQ">
-                                                    <rect key="frame" x="20" y="10.5" width="374" height="45"/>
+                                                    <rect key="frame" x="20" y="10.5" width="374" height="44"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cUI-bS-Cfj">
-                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="45"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="44"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="olia" translatesAutoresizingMaskIntoConstraints="NO" id="vNb-lf-j65">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="45"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="44" id="SJl-CK-nJY"/>
+                                                                        <constraint firstAttribute="height" constant="44" id="af5-bP-ieO"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="lkg-ZC-plc">
-                                                                    <rect key="frame" x="52" y="0.0" width="267" height="45"/>
+                                                                    <rect key="frame" x="52" y="0.0" width="267" height="44"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ankush" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aY-7u-zKQ">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="20.5"/>
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="20.5" id="73v-Fe-grq"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
                                                                             <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you done with the notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGZ-e5-6gO">
-                                                                            <rect key="frame" x="0.0" y="26.5" width="186" height="18.5"/>
+                                                                            <rect key="frame" x="0.0" y="26.5" width="161.5" height="17.5"/>
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -132,21 +133,20 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PUu-Ab-czh">
-                                                            <rect key="frame" x="319" y="0.0" width="55" height="45"/>
+                                                            <rect key="frame" x="319" y="0.0" width="55" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye3-rb-I2d">
-                                                                    <rect key="frame" x="11.5" y="0.0" width="32" height="20"/>
+                                                                    <rect key="frame" x="14" y="0.0" width="27.5" height="19.5"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="13"/>
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="9rt-W2-cgD">
-                                                                    <rect key="frame" x="17.5" y="25" width="20" height="20"/>
+                                                                    <rect key="frame" x="18.5" y="24.5" width="18" height="19.5"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="20" id="Eg1-gk-xV3"/>
-                                                                        <constraint firstAttribute="width" constant="20" id="fg5-1F-GlM"/>
+                                                                        <constraint firstAttribute="width" constant="18" id="fg5-1F-GlM"/>
                                                                     </constraints>
                                                                 </imageView>
                                                             </subviews>
@@ -169,6 +169,7 @@
                                             <outlet property="chatFriendNameLabel" destination="1aY-7u-zKQ" id="Mvf-dp-iWe"/>
                                             <outlet property="chatLatestMessageLabel" destination="rGZ-e5-6gO" id="Hwj-U8-9Ee"/>
                                             <outlet property="chatStatusImageView" destination="9rt-W2-cgD" id="78R-BS-uIK"/>
+                                            <outlet property="chatStatusWidth" destination="fg5-1F-GlM" id="TCf-bh-RXI"/>
                                             <outlet property="chatTimeLabel" destination="ye3-rb-I2d" id="ctu-WN-TuZ"/>
                                         </connections>
                                     </tableViewCell>
