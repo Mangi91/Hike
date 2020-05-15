@@ -57,14 +57,16 @@ class HikeViewController: UIViewController {
             vc.themePageVCDelegate = self
         }
     }
-    
+        
     @objc func themeBackgroundTapped() {
         if chat.isMinimized {
             chat.maximize()
             showUserIcons()
+            disableChat(false)
         } else {
             chat.minimize()
             showThemeIcons()
+            disableChat(true)
         }
         
         //chat.reloadRows(at: chat.visibleCellIndexPaths, with: .none)
@@ -109,6 +111,11 @@ class HikeViewController: UIViewController {
         if device != .iPhoneXXS && device != .iPhoneXR && device != .iPhoneXSMax {
             searchContainerTop.constant = 23
         }
+    }
+    
+    private func disableChat(_ disable: Bool) {
+        chat.isScrollEnabled = !disable
+        chat.allowsSelection = !disable
     }
 }
 
