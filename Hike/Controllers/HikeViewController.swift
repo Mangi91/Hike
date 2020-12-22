@@ -68,8 +68,6 @@ class HikeViewController: UIViewController {
             showThemeIcons()
             disableChat(true)
         }
-        
-        //chat.reloadRows(at: chat.visibleCellIndexPaths, with: .none)
     }
     
     private func showThemeIcons() {
@@ -118,18 +116,3 @@ class HikeViewController: UIViewController {
         chat.allowsSelection = !disable
     }
 }
-
-//extension UITableView {
-//    var visibleCellIndexPaths: [IndexPath] {
-//        get {
-//            var indexPaths = [IndexPath]()
-//            for cell in visibleCells {
-//                if let indexPath = self.indexPath(for: cell) {
-//                    indexPaths.append(indexPath)
-//                }
-//            }
-//
-//            return indexPaths
-//        }
-//    }
-//}

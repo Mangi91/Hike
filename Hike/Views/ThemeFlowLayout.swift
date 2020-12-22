@@ -27,7 +27,6 @@ class ThemeFlowLayout: UICollectionViewFlowLayout {
             attributesCopy.append(itemAttributesCopy)
         }
         
-        
         return attributesCopy
     }
     

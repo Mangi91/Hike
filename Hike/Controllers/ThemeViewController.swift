@@ -13,7 +13,6 @@ class ThemeViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
         view.addGradientLayer(colors: themeColors!, locations: [0.0, 0.50, 1.0])
     }
 }
